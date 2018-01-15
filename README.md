@@ -11,3 +11,27 @@ Setup instructions, scripts and more useful with raspberrypi 3!
 ...Select SD Card
 2. Pi-Ingredients IMG Recipe
 ...Restore Backup
+
+## Setup Wifi via command line
+
+`$ sudo iwlist wlan0 scan | grep -i ESSID:`
+
+copy name of desired wifi network (WIFINAME) without quotes
+
+```
+$ wpa_passphrase WIFINAME
+$ reading passphrase from stdin
+$ WIFIPASSWORD
+```
+
+```
+network={
+            ssid="WIFINAME"
+            #psk="WIFIPASSWORD"
+            psk=EXAMPLE3a871c5de00d6e4be3f74627a53f51ab980f0384670ef
+
+        }
+```
+copy and paste output from above to bottom of file delete the non-encoded psk
+
+`$ sudo vi /etc/wpa_supplicant/wpa_supplicant.conf`
