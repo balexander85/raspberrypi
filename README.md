@@ -35,3 +35,9 @@ network={
 copy and paste output from above to bottom of file delete the non-encoded psk
 
 `$ sudo vi /etc/wpa_supplicant/wpa_supplicant.conf`
+
+## Turn on ssh
+
+1. `$ sudo raspi-config`
+2. Navigate to Interfacing Options.
+3. Scroll down and select SSH > Yes.
