@@ -1,7 +1,7 @@
 # raspberrypi
 Setup instructions, scripts and more useful with raspberrypi 3!
 
-# RASPBERRY PI (Raspbian Jessie Lite Initial Setup)
+# RASPBERRY PI (Raspbian Stretch Setup)
 
 > Basic instructions for setting up the Raspberry Pi with Raspbian.
 
